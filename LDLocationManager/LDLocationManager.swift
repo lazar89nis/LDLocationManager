@@ -35,7 +35,7 @@ open class LDLocationManager: NSObject, CLLocationManagerDelegate
     // MARK: - Shared instance
     
     /// Shared (singleton instance)
-    open static let sharedManager: LDLocationManager = {
+    public static let sharedManager: LDLocationManager = {
         
         let instance = LDLocationManager()
         instance.locationManager.delegate = instance
